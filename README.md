@@ -2,7 +2,17 @@
 
 
   ## Quick start
+   # Data Quality Pipeline
+   ![CI]
+   
+   (https://github.com/ayabenmeftah84-rgb/data-quality-pipeline/actions/workflows/ci.yml/badge.svg)
 
+   ## Why this project
+
+Real-world data is rarely clean: missing values, values stored in the wrong format, extreme values and duplicates can silently distort analyses and machine-learning models. This project builds a reproducible data quality pipeline on a public dataset (77,679 Paris listings from Inside Airbnb). It profiles the data, validates it against explicit rules, cleans what can be fixed safely, quarantines doubtful rows instead of deleting them, and measures how well the rules detect known errors. It is a learning project: the rules and thresholds are provisional, and the main goal is a transparent, tested and reproducible method rather than a production tool.
+
+   ## Quick start
+   ...
 Requirements: Python 3.10+ and Java 17+ (needed by Spark).
 
 ```bash
