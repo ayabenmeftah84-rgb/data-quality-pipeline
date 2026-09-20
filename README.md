@@ -31,6 +31,32 @@ A listing can break several rules, so the counts add up to more than 48. Manual 
 
 ## Limitations and future work
 
+## Results
+
+Great Expectations validates the same 18 rules before and after cleaning (`src/validate_data.py`). "Before" uses the raw data with a minimal typing only (no value is corrected). "After" uses the cleaned data.
+
+| Rule | Before cleaning | After cleaning |
+|---|---|---|
+| `id` not null | PASS | PASS |
+| `id` unique | PASS | PASS |
+| `price` > 0 and <= 10,000 | FAIL (31 rows, 0.064 %) | PASS |
+| `price` present in at least 95 % of rows | FAIL (29,277 rows, 37.69 %) | FAIL (29,269 rows, 37.70 %) |
+| `beds` <= 20 | FAIL (4 rows) | PASS |
+| `bedrooms` <= 15 | FAIL (11 rows) | PASS |
+| `bathrooms` <= 10 | FAIL (5 rows) | PASS |
+| 7 `review_scores_*` columns in ]0, 5] | FAIL (3 to 9 rows per column) | PASS |
+| `last_review` >= `first_review` | PASS | PASS |
+| `latitude` inside the Paris bounding box | PASS | PASS |
+| `longitude` inside the Paris bounding box | PASS | PASS |
+| `host_about` not made only of digits | FAIL (184 rows, 0.514 %) | PASS |
+
+**Summary.** 5 of 18 rules pass before cleaning and 17 of 18 after. The data goes from 77,679 to 77,631 rows (48 quarantined) and from 90 to 80 columns (12 empty columns dropped, 2 indicator columns added: `price_missing` and `flag_minimum_nights_gt_365`). Detailed reports are in `reports/`.
+
+**How to read these results**
+
+- The rules used for validation are the same as those applied during cleaning, so the "After" column mainly confirms that the cleaning applies the rules correctly. It does not prove that the data is free of errors.
+- Apart from missing prices (37.7 %) and `host_about` (0.5 %), every failed rule concerns fewer than 0.1 % of rows. The most significant quality issues of this dataset are the 12 empty columns and the missing prices.
+- One rule still fails after cleaning by design: missing prices are not imputed.
 - **Fixed thresholds instead of consistency rules.** Quarantine relies on fixed limits (price, beds, bedrooms, bathrooms). Some legitimate large or luxury properties are quarantined, and some errors could pass unnoticed. A better approach would use **cross-column consistency rules**, for example comparing beds, bedrooms and guest capacity, or checking the price per bedroom or per guest.
 - **Missing prices are not imputed.** About 38 % of listings have no price. They are kept and flagged rather than filled with guesses, so the rule "price present in at least 95 % of rows" still fails after cleaning.
 - **Zero review scores are an assumption.** Treating 0 as "no score" should be checked against the data documentation.
