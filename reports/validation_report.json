@@ -1,0 +1,271 @@
+{
+  "summary": {
+    "before": {
+      "rows": 77679,
+      "columns": 90,
+      "fully_empty_columns": 12,
+      "rules_passed": 5
+    },
+    "after": {
+      "rows": 77631,
+      "columns": 80,
+      "fully_empty_columns": 0,
+      "rules_passed": 17
+    },
+    "rules_total": 18
+  },
+  "rules": {
+    "id non nul": {
+      "before": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "id unique": {
+      "before": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "price > 0 et <= 10 000": {
+      "before": {
+        "success": false,
+        "unexpected_count": 31,
+        "unexpected_percent": 0.064,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "price renseigne dans au moins 95 % des lignes": {
+      "before": {
+        "success": false,
+        "unexpected_count": 29277,
+        "unexpected_percent": 37.69,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": false,
+        "unexpected_count": 29269,
+        "unexpected_percent": 37.703,
+        "checked_rows": 77631
+      }
+    },
+    "beds <= 20": {
+      "before": {
+        "success": false,
+        "unexpected_count": 4,
+        "unexpected_percent": 0.009,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "bedrooms <= 15": {
+      "before": {
+        "success": false,
+        "unexpected_count": 11,
+        "unexpected_percent": 0.017,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "bathrooms <= 10": {
+      "before": {
+        "success": false,
+        "unexpected_count": 5,
+        "unexpected_percent": 0.011,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_accuracy dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 9,
+        "unexpected_percent": 0.015,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_checkin dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 9,
+        "unexpected_percent": 0.015,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_cleanliness dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 9,
+        "unexpected_percent": 0.015,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_communication dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 7,
+        "unexpected_percent": 0.011,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_location dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 8,
+        "unexpected_percent": 0.013,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_rating dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 3,
+        "unexpected_percent": 0.005,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "review_scores_value dans ]0, 5]": {
+      "before": {
+        "success": false,
+        "unexpected_count": 8,
+        "unexpected_percent": 0.013,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "last_review >= first_review": {
+      "before": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "latitude dans la boite de Paris": {
+      "before": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "longitude dans la boite de Paris": {
+      "before": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    },
+    "host_about pas uniquement numerique": {
+      "before": {
+        "success": false,
+        "unexpected_count": 184,
+        "unexpected_percent": 0.514,
+        "checked_rows": 77679
+      },
+      "after": {
+        "success": true,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "checked_rows": 77631
+      }
+    }
+  }
+}
