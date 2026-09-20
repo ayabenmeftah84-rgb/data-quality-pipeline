@@ -1,5 +1,31 @@
 # Data Quality Pipeline
 
+
+  ## Quick start
+
+Requirements: Python 3.10+ and Java 17+ (needed by Spark).
+
+```bash
+git clone https://github.com/ayabenmeftah84-rgb/data-quality-pipeline.git
+cd data-quality-pipeline
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Download listings.csv.gz (Paris) from https://insideairbnb.com/get-the-data/
+mkdir -p data/raw   # then put the file in data/raw/
+
+python src/run_pipeline.py
+```
+
+The pipeline runs three steps in order: profiling (`src/profile_data.py`), cleaning with quarantine (`src/clean_data.py`) and validation before/after cleaning (`src/validate_data.py`). On the full Paris file it takes about 2 minutes et 4 seconds on a laptop (Spark in local mode). Use `--steps clean validate` to run only some steps. Results are written to `reports/`.
+
+## Tests
+
+```bash
+python -m pytest
+```
+
+The tests use small in-memory Spark DataFrames. They cover the cleaning rules (including values exactly at the thresholds), duplicate and invalid ids, row-count consistency, the validation rule builder and the pipeline runner. They run automatically on every push with GitHub Actions.
    ## Dataset
 
    - **Source**: Inside Airbnb (https://insideairbnb.com/get-the-data/)
@@ -63,3 +89,7 @@ Great Expectations validates the same 18 rules before and after cleaning (`src/v
 - **Approximate geographic check.** Coordinates are validated against a rough bounding box around Paris.
 - **One data snapshot, run locally.** The pipeline was tested on a single Inside Airbnb file, with Spark in local mode on one machine.
 - **Orchestration with Airflow and richer quality metrics** (for example data lineage or drift monitoring) are planned but not implemented yet.
+
+# Data Quality Pipeline
+
+![CI](https://github.com/ayabenmeftah84-rgb/data-quality-pipeline/actions/workflows/ci.yml/badge.svg)
