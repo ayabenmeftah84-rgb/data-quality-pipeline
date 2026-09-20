@@ -1,0 +1,29 @@
+{
+  "rows_in": 77679,
+  "dropped_empty_columns": [
+    "neighborhood_overview",
+    "host_since",
+    "host_response_time",
+    "host_response_rate",
+    "host_acceptance_rate",
+    "host_thumbnail_url",
+    "host_neighbourhood",
+    "host_total_listings_count",
+    "neighbourhood",
+    "neighbourhood_group_cleansed",
+    "calendar_updated",
+    "instant_bookable"
+  ],
+  "values_lost_in_conversion": {},
+  "review_score_zeros_set_to_null": 53,
+  "host_about_numeric_set_to_null": 184,
+  "duplicate_ids_removed": 0,
+  "rows_clean": 77631,
+  "rows_quarantined": 48,
+  "quarantine_reasons": {
+    "bedrooms_too_high": 11,
+    "price_too_high": 31,
+    "beds_too_high": 4,
+    "bathrooms_too_high": 5
+  }
+}
