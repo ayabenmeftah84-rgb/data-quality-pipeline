@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "errors_per_type": 500,
+  "results": [
+    {
+      "error_type": "price_x100",
+      "description": "Price multiplied by 100",
+      "injected": 500,
+      "detected": 440,
+      "recall_pct": 88.0
+    },
+    {
+      "error_type": "price_negative",
+      "description": "Price made negative",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    },
+    {
+      "error_type": "beds_extra_digit",
+      "description": "Extra digit typed in beds (2 becomes 23)",
+      "injected": 500,
+      "detected": 258,
+      "recall_pct": 51.6
+    },
+    {
+      "error_type": "rating_above_5",
+      "description": "Review rating set to 7.5",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    },
+    {
+      "error_type": "dates_swapped",
+      "description": "first_review and last_review swapped",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    },
+    {
+      "error_type": "gps_far_shift",
+      "description": "Latitude shifted by 5 degrees (about 550 km)",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    },
+    {
+      "error_type": "gps_small_shift",
+      "description": "Latitude shifted by 0.05 degrees (about 5 km)",
+      "injected": 500,
+      "detected": 0,
+      "recall_pct": 0.0
+    },
+    {
+      "error_type": "host_about_phone",
+      "description": "Free text replaced by a phone number",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    },
+    {
+      "error_type": "duplicate_rows",
+      "description": "Row duplicated (same id)",
+      "injected": 500,
+      "detected": 500,
+      "recall_pct": 100.0
+    }
+  ],
+  "total_injected": 4500,
+  "total_detected": 3698,
+  "overall_recall_pct": 82.2,
+  "collateral_quarantined_rows": 0
+}

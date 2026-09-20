@@ -5,3 +5,4 @@ data/raw/
 data/clean/
 data/quarantine/
 .pytest_cache/
+data/injected/
