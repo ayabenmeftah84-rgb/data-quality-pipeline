@@ -1,0 +1,91 @@
+column,missing_count,missing_pct,distinct_approx,numeric_min,numeric_max,sample_value
+neighborhood_overview,77679,100.0,0,,,
+host_since,77679,100.0,0,,,
+host_response_time,77679,100.0,0,,,
+host_response_rate,77679,100.0,0,,,
+host_acceptance_rate,77679,100.0,0,,,
+host_thumbnail_url,77679,100.0,0,,,
+host_neighbourhood,77679,100.0,0,,,
+host_total_listings_count,77679,100.0,0,,,
+neighbourhood,77679,100.0,0,,,
+neighbourhood_group_cleansed,77679,100.0,0,,,
+calendar_updated,77679,100.0,0,,,
+instant_bookable,77679,100.0,0,,,
+host_about,41899,53.94,20814,75019.0,33670518909.0,I'm Fred. i'm 33 and I live in
+bathrooms,32371,41.67,19,0.5,42.0,1.0
+beds,30816,39.67,19,1.0,46.0,1
+price,29277,37.69,11387,,,$226.75
+price_quote_total_price,29277,37.69,10494,12.0,2037064.0,907.00
+price_quote_price_per_night,29277,37.69,12396,3.2,97003.05,226.75
+estimated_revenue_l365d,29277,37.69,18623,0.0,2499000.0,14059
+price_quote_checkin_date,25869,33.3,361,,,2026-06-27
+price_quote_checkout_date,25869,33.3,367,,,2026-07-01
+price_quote_raw,25869,33.3,44856,,,"{""quote"": {""taxes"": null, ""cur"
+host_location,15912,20.48,2046,,,"Paris, France"
+review_scores_checkin,15907,20.48,172,0.0,5.0,4.9
+review_scores_location,15907,20.48,166,0.0,5.0,4.93
+review_scores_value,15908,20.48,185,0.0,5.0,4.77
+first_review,15898,20.47,5008,,,2016-03-23
+last_review,15898,20.47,3787,,,2026-05-28
+review_scores_rating,15898,20.47,169,0.0,5.0,4.83
+review_scores_accuracy,15903,20.47,173,0.0,5.0,4.88
+review_scores_cleanliness,15901,20.47,196,0.0,5.0,4.62
+review_scores_communication,15904,20.47,157,0.0,5.0,4.97
+reviews_per_month,15898,20.47,919,0.01,55.49,0.83
+license,14243,18.34,47577,1527.0,1.4403848302967086e+18,7511502831082
+bedrooms,13956,17.97,20,0.0,41.0,1
+description,2829,3.64,72344,0.0,0.0,Fully furnished charming flat 
+has_availability,1419,1.83,2,,,t
+host_profile_url,267,0.34,54487,,,https://www.airbnb.com/users/p
+host_profile_id,260,0.33,57145,1.4625063146408154e+18,1.7129568213431754e+18,1462522535645869436
+host_name,260,0.33,11209,nan,nan,Frédéric
+hosts_time_as_user_years,260,0.33,18,0.0,17.0,15
+hosts_time_as_user_months,260,0.33,12,0.0,11.0,1
+hosts_time_as_host_years,260,0.33,16,0.0,15.0,10
+hosts_time_as_host_months,260,0.33,12,0.0,11.0,3
+host_is_superhost,260,0.33,2,,,f
+host_picture_url,260,0.33,51953,,,https://a0.muscache.com/im/pic
+host_listings_count,260,0.33,170,0.0,3126.0,1
+host_has_profile_pic,260,0.33,2,,,t
+host_identity_verified,260,0.33,2,,,t
+bathrooms_text,50,0.06,33,,,1 bath
+id,0,0.0,76161,3109.0,1.7090181335159995e+18,114543
+listing_url,0,0.0,83211,,,https://www.airbnb.com/rooms/1
+scrape_id,0,0.0,1,20260616211535.0,20260616211535.0,20260616211535
+last_scraped,0,0.0,10,,,2026-06-21
+source,0,0.0,2,,,city scrape
+name,0,0.0,74771,222.0,222.0,Charming 55m² flat - Eiffel To
+picture_url,1,0.0,76001,,,https://a0.muscache.com/pictur
+host_id,0,0.0,57192,2626.0,1.708760872190609e+18,581233
+host_url,0,0.0,53048,,,https://www.airbnb.com/users/s
+host_verifications,0,0.0,1,,,None
+neighbourhood_cleansed,0,0.0,20,,,Vaugirard
+latitude,0,0.0,34170,48.816090055186486,48.90159,48.8495
+longitude,0,0.0,40868,2.2298957,2.46712,2.28936
+property_type,0,0.0,57,,,Entire rental unit
+room_type,0,0.0,4,,,Entire home/apt
+accommodates,0,0.0,16,1.0,16.0,2
+amenities,0,0.0,69597,,,"[""Essentials"", ""Smoke alarm"", "
+minimum_nights,0,0.0,120,1.0,1000.0,4
+maximum_nights,0,0.0,291,1.0,2147483647.0,1125
+minimum_minimum_nights,0,0.0,120,1.0,1000.0,4
+maximum_minimum_nights,0,0.0,146,1.0,1000.0,4
+minimum_maximum_nights,0,0.0,277,1.0,2147483647.0,1125
+maximum_maximum_nights,0,0.0,291,1.0,2147483647.0,1125
+minimum_nights_avg_ntm,0,0.0,706,1.0,1000.0,4.0
+maximum_nights_avg_ntm,0,0.0,2432,1.0,2147483647.0,1125.0
+availability_30,0,0.0,32,0.0,30.0,21
+availability_60,0,0.0,62,0.0,60.0,51
+availability_90,0,0.0,93,0.0,90.0,63
+availability_365,0,0.0,365,0.0,365.0,63
+calendar_last_scraped,0,0.0,10,,,2026-06-21
+number_of_reviews,0,0.0,635,0.0,4589.0,103
+number_of_reviews_ltm,0,0.0,150,0.0,774.0,6
+number_of_reviews_l30d,0,0.0,22,0.0,32.0,1
+availability_eoy,0,0.0,201,0.0,198.0,63
+number_of_reviews_ly,0,0.0,154,0.0,786.0,6
+estimated_occupancy_l365d,0,0.0,95,0.0,255.0,62
+calculated_host_listings_count,0,0.0,94,1.0,754.0,1
+calculated_host_listings_count_entire_homes,0,0.0,95,0.0,754.0,1
+calculated_host_listings_count_private_rooms,0,0.0,24,0.0,190.0,0
+calculated_host_listings_count_shared_rooms,0,0.0,10,0.0,11.0,0
